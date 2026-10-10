@@ -1,0 +1,28 @@
+{
+  "name": "bantay-baha",
+  "version": "1.0.0",
+  "description": "A full-stack, mobile-responsive web application that simulates an IoT flood monitoring sensor, provides real-time data analytics, and uses Google Gemini AI to generate automated public safety advisories in English and Filipino.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurtbauso/bantay-baha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kurtbauso/bantay-baha/issues"
+  },
+  "homepage": "https://github.com/kurtbauso/bantay-baha#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0"
+  }
+}

@@ -1,0 +1,21 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { background-color: #f4f7f6; color: #333; padding: 15px; }
+.container { max-width: 375px; margin: 0 auto; background: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+header { text-align: center; margin-bottom: 20px; }
+.status-card { padding: 20px; text-align: center; border-radius: 8px; margin-bottom: 15px; background: #eee; transition: background 0.3s; }
+.status-card h2 { font-size: 3rem; margin-bottom: 5px; }
+.status-card p { font-size: 1.2rem; font-weight: bold; }
+
+.status-normal { background: #d4edda; color: #155724; }
+.status-alert { background: #fff3cd; color: #856404; }
+.status-danger { background: #f8d7da; color: #721c24; }
+
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; background: #f8f9fa; padding: 10px; border-radius: 5px; }
+.ai-section { margin-bottom: 20px; text-align: center; }
+button { background: #007bff; color: white; border: none; padding: 12px 20px; border-radius: 5px; font-size: 1rem; width: 100%; cursor: pointer; }
+.advisory-box { margin-top: 10px; padding: 15px; background: #e2e3e5; border-radius: 5px; text-align: left; font-size: 0.95rem; line-height: 1.4; }
+.hidden { display: none; }
+
+.chart-container { margin-bottom: 20px; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.9rem;}
+th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }

@@ -1,0 +1,9 @@
+# Reflection
+
+1. **Security Risks:** First, the `/api/readings` endpoint is completely public and unauthenticated, meaning anyone can execute a POST request and inject fake sensor data. I would fix this by requiring an API key or JWT token in the header of the POST request. Second, while basic type checking exists, there is a lack of strict rate limiting, leaving the API vulnerable to Denial of Service (DoS) if spammed. I would implement an Express rate-limiting middleware to cap requests per minute.
+
+2. **AI Liability & Safeguards:** The barangay council and the app developer ultimately bear responsibility, as the AI is a tool, not a legal entity. To safeguard against false advisories, I implemented strict system prompt constraints (telling the AI to *only* use provided numbers) and added a rule-based fallback advisory that triggers if the AI API fails. A better safeguard would be adding a "Human-in-the-Loop" dashboard where an official must click "Approve" before the AI advisory goes public.
+
+3. **Emerging Tech (Blockchain):** Blockchain could be used to create an immutable, tamper-proof ledger of historical flood data and automated public alerts, ensuring that official records cannot be altered retroactively for political reasons. However, it might not be worth the cost because writing data to a blockchain every 5 seconds is highly expensive in transaction fees (gas) and too slow for real-time emergency disaster monitoring.
+
+4. **Big Data Analytics:** Scaling from 1 to 200 sensors would transition the system from simple descriptive analytics to predictive analytics. Instead of an in-memory array, the barangay would need a distributed time-series database (like InfluxDB). They could then train machine learning models on the massive dataset to predict localized flooding hours in advance based on upstream sensor trends rather than just reacting to current water levels.

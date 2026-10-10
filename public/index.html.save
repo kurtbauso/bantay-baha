@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantay-Baha Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bantay-Baha</h1>
+            <p>Community Flood Monitor</p>
+        </header>
+
+        <section class="status-card" id="statusCard">
+            <h2 id="currentLevel">-- cm</h2>
+            <p id="statusText">Awaiting Data...</p>
+        </section>
+
+        <section class="analytics">
+            <h3>Analytics</h3>
+            <div class="stats-grid">
+                <div>Trend: <strong id="trend">--</strong></div>
+                <div>Avg: <strong id="avg">-- cm</strong></div>
+                <div>Min: <strong id="min">-- cm</strong></div>
+                <div>Max: <strong id="max">-- cm</strong></div>
+            </div>
+        </section>
+
+        <section class="ai-section">
+            <button id="btnAdvisory" onclick="generateAdvisory()">Generate AI Advisory</button>
+            <div id="advisoryOutput" class="advisory-box hidden"></div>
+        </section>
+
+        <section class="chart-container">
+            <canvas id="levelChart"></canvas>
+        </section>
+
+        <section class="table-container">
+            <h3>Latest 10 Readings</h3>
+            <table>
+                <thead>
+                    <tr><th>Time</th><th>Level (cm)</th></tr>
+                </thead>
+               <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantay-Baha Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bantay-Baha</h1>
+            <p>Community Flood Monitor</p>
+        </header>
+
+        <section class="status-card" id="statusCard">
+            <h2 id="currentLevel">-- cm</h2>
+            <p id="statusText">Awaiting Data...</p>
+        </section>
+
+        <section class="analytics">
+            <h3>Analytics (All Time)</h3>
+            <div class="stats-grid">
+                <div>Trend: <strong id="trend">--</strong></div>
+                <div>Avg: <strong id="avg">-- cm</strong></div>
+                <div>Min: <strong id="min">-- cm</strong></div>
+                <div>Max: <strong id="max">-- cm</strong></div>
+            </div>
+        </section>
+
+        <section class="ai-section">
+            <button id="btnAdvisory" onclick="generateAdvisory()">Generate AI Advisory</button>
+            <div id="advisoryOutput" class="advisory-box hidden"></div>
+        </section>
+
+        <section class="chart-container">
+            <canvas id="levelChart"></canvas>
+        </section>
+
+        <section class="table-container">
+            <h3>Latest 10 Readings</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Level (cm)</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data injected via JS -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
